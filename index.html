@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru" translate="no" data-theme="tactical" data-style="default">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="google" content="notranslate" />
+<title>YAKO HUB — Admin Panel</title>
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+<header class="appbar">
+  <div class="brand">
+    <svg class="logo-mark" viewBox="0 0 44 44" width="40" height="40" aria-hidden="true">
+      <defs>
+        <linearGradient id="ylg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="var(--accent-2)"/><stop offset="1" stop-color="var(--accent)"/>
+        </linearGradient>
+      </defs>
+      <path d="M22 1.5 L38.5 11 V33 L22 42.5 L5.5 33 V11 Z" fill="url(#ylg)" stroke="rgba(255,255,255,.28)" stroke-width="1"/>
+      <path d="M22 6 L34.5 13.2 V30.8 L22 38 L9.5 30.8 V13.2 Z" fill="none" stroke="rgba(0,0,0,.18)" stroke-width="1"/>
+      <path d="M14 13.5 L22 23 L30 13.5" fill="none" stroke="#0a1206" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M22 23 L22 31.5" fill="none" stroke="#0a1206" stroke-width="3.6" stroke-linecap="round"/>
+    </svg>
+    <div class="brand-text"><span class="b1">YAKO <em>HUB</em></span><span class="b2">ADMIN&nbsp;PANEL</span></div>
+  </div>
+
+  <button class="style-btn" id="styleBtn" title="Выбор стиля">🎨 Стиль</button>
+
+  <nav class="topnav" id="topnav"></nav>
+
+  <div class="conn-pill" id="connPill"><span class="dot" id="connDot"></span><span id="connText">…</span></div>
+</header>
+
+<main class="content" id="content"></main>
+
+<div class="modal-bg" id="modalBg"><div class="modal" id="modal"></div></div>
+<div id="toasts"></div>
+
+<div class="loader-overlay" id="loader">
+  <div class="loader-box">
+    <div class="loader-hex">
+      <svg viewBox="0 0 44 44" width="96" height="96" aria-hidden="true">
+        <defs><linearGradient id="ylg2" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="var(--accent-2)"/><stop offset="1" stop-color="var(--accent)"/>
+        </linearGradient></defs>
+        <path d="M22 1.5 L38.5 11 V33 L22 42.5 L5.5 33 V11 Z" fill="url(#ylg2)" stroke="rgba(255,255,255,.28)" stroke-width="1"/>
+        <path d="M22 6 L34.5 13.2 V30.8 L22 38 L9.5 30.8 V13.2 Z" fill="none" stroke="rgba(0,0,0,.18)" stroke-width="1"/>
+        <path d="M14 13.5 L22 23 L30 13.5" fill="none" stroke="#0a1206" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M22 23 L22 31.5" fill="none" stroke="#0a1206" stroke-width="3.6" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="loader-title">YAKO <em>HUB</em></div>
+    <div class="loader-sub">ADMIN&nbsp;PANEL</div>
+    <div class="loader-bar"><span></span></div>
+    <div class="loader-msg" id="loaderMsg">Загрузка…</div>
+  </div>
+</div>
+
+<script src="/app.js"></script>
+</body>
+</html>

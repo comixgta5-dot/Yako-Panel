@@ -1,0 +1,9 @@
+{
+  "rconHost": "127.0.0.1",
+  "rconPort": 21114,
+  "rconPassword": "CHANGE_ME_your_rcon_password",
+  "webHost": "127.0.0.1",
+  "webPort": 3000,
+  "panelUser": "",
+  "panelPassword": ""
+}

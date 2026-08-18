@@ -1,0 +1,15 @@
+{
+  "rconHost": "195.18.27.32",
+  "rconPort": 21114,
+  "rconPassword": "312fs34523rwefwy5y54",
+  "webHost": "127.0.0.1",
+  "webPort": 3000,
+  "panelUser": "",
+  "panelPassword": "",
+  "owner": { "username": "yako", "password": "yako" },
+  "servers": [
+    { "id": 1, "name": "1 HYPE HUTOR" },
+    { "id": 2, "name": "2 HUTOR Squad Warzone" },
+    { "id": 3, "name": "3 HUTOR TC" }
+  ]
+}

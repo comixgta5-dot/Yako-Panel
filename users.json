@@ -1,0 +1,11 @@
+[
+  {
+    "username": "yako",
+    "salt": "fae92514d659d2f5431030d7f2558430",
+    "hash": "5e6948f08a02c85ffd1a1a96c59671393119b2a973c4a3c05051b8adb4c871b13164a68d0f0e0e9b458b3beea82549a3b8ddd5b98481af70151c42a8fcef32cf",
+    "role": "owner",
+    "disabled": false,
+    "createdAt": 1783780038958,
+    "steamID": "76561199156156773"
+  }
+]

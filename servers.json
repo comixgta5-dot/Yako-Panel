@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "1 HYPE HUTOR",
+    "host": "195.18.27.32",
+    "port": 21114,
+    "password": "312fs34523rwefwy5y54",
+    "active": true
+  },
+  {
+    "id": 2,
+    "name": "2 HUTOR Squad Warzone",
+    "host": "",
+    "port": "",
+    "password": "",
+    "active": false
+  },
+  {
+    "id": 3,
+    "name": "3 HUTOR TC",
+    "host": "",
+    "port": "",
+    "password": "",
+    "active": false
+  }
+]

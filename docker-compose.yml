@@ -1,0 +1,33 @@
+services:
+  yako-panel:
+    build: .
+    image: yako-admin-panel
+    container_name: yako-admin-panel
+    restart: unless-stopped
+
+    # Web UI port (host:container). Open http://<host>:8973
+    ports:
+      - "8973:8973"
+
+    environment:
+      - PANEL_HOST=0.0.0.0
+      - PANEL_PORT=8973
+      # --- RCON: uncomment to override config.json ---
+      # Docker Desktop (Windows/Mac), RCON on the host machine:
+      # - SQUAD_RCON_HOST=host.docker.internal
+      # Linux, RCON on the host: prefer "network_mode: host" below instead.
+      # - SQUAD_RCON_PORT=21114
+      # - SQUAD_RCON_PASSWORD=your_rcon_password
+
+    volumes:
+      # Persist panel data (users/roles/chat/bans) on the host
+      - ./data:/app/data
+
+    # Lets the container reach the host's RCON on Docker Desktop
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+    # === Squad server & panel on the SAME Linux host? ===
+    # Use host networking so rconHost 127.0.0.1 reaches the local RCON.
+    # Then REMOVE the "ports:" block above (host mode ignores it).
+    # network_mode: host
